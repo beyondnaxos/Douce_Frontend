@@ -21,7 +21,7 @@ function App() {
      <Navbar />
      </div>
      <Routes>
-       <Route path="/" exact component={Home} />
+       <Route path="/" component={Home} />
        <Route path="/about" component={About} />
        <Route path="/contact" component={Contact} />
        <Route path="/signin" component={SignIn} />

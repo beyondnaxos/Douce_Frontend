@@ -1,8 +1,11 @@
 import React from 'react';
+import HomeCard from '../components/HomeCard/HomeCard';
 
 const Home = () => {
   return (    
-      <h1>Welcome to our website!</h1>
+      <>
+      <HomeCard />
+      </>
   );
 };
 
