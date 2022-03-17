@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+#navMain {
+  position: absolute;
+  top: 50px;
+  border-radius: 30px;
+  left: 50px;
+  /* width: 48vw ; */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,6 +19,12 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.main {
+ width: 100%;
+ display: flex;
+ justify-content: center;
 }
 
 .App-header {

@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(236, 240, 245);
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+    -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+    user-select: none; /* Propriété standard */
+}
+
+img {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+.bg {
+    
+    overflow: hidden;
+    background-color: #2c2b2c;
+    width: 95vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    
+}
+
+.logoContainer {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    animation-name: spin;
+    animation-duration: 20000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+    /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */ 
+    /* transform: rotate(.03turn);  */
+    
+}
+@keyframes spin {
+    0% {
+        transform:rotate(-10deg);
+    }
+    
+    20% {
+        transform:rotate(10deg);
+    }
+    40% {
+        transform:rotate(-10deg);
+    }
+    60% {
+        transform:rotate(10deg);
+    }
+    80% {
+        transform:rotate(-10deg);
+    }
+    100% {
+        transform:rotate(10deg);
+    }
+}
+
+.subcontainer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub {
+    margin: 0;
+    font-size: 35px;
+    font-family: Helvetica, sans-serif;
+}
+
+.ring1, .ring2, .ring3, .ring4, .ring5, .ring6, .ring7, .ring8 { 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(14, 14, 14, 0.2) 0px 8px 24px;
+}
+
+
+.ring1 {
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    background: rgb(255, 150, 200);
+}
+
+.ring2 {
+
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+    background: rgb(255, 130, 200);
+}
+
+.ring3 {
+
+    width: 700px;
+    height: 700px;
+    border-radius: 350px;
+    background: rgb(255, 110, 200);
+}
+
+.ring4 {
+
+    width: 800px;
+    height: 800px;
+    border-radius: 400px;
+    background: rgb(255, 90, 200);
+}
+
+.ring5 {
+    width: 900px;
+    height: 900px;
+    border-radius: 450px;
+    background: rgb(255, 70, 200);
+}
+
+.ring6 {
+
+    width: 1000px;
+    height: 1000px;
+    border-radius: 500px;
+    background: rgb(255, 50, 200);
+}
+
+.ring7 {
+
+    width: 1100px;
+    height: 1100px;
+    border-radius: 550px;
+    background: rgb(255, 30, 200);
+}
+
+.ring8 {
+
+    width: 1200px;
+    height: 1200px;
+    border-radius: 600px;
+    background: rgb(255, 10, 200);
+}
+
+
+.uc {
+    font-size: 23px;
+    font-family: Helvetica, sans-serif;
+    color: rgb(226, 88, 169);
+    margin-top: 10px;
+    font-weight: bold;
+    
+}
+
