@@ -5,17 +5,17 @@ const Background = () => {
 
 
     return (
-        <div class="bg">
-        <div class="bg2">
-          <div class="ring8">
-            <div class="ring7">
-              <div class="ring6">
-                <div class="ring5">
-                  <div class="ring4">
-                    <div class="ring3">
-                      <div class="ring2">
-                        <div class="ring1">
-                          {/* <div class="logoContainer">
+        <div className="bg">
+        <div className="bg2">
+          <div className="ring8">
+            <div className="ring7">
+              <div className="ring6">
+                <div className="ring5">
+                  <div className="ring4">
+                    <div className="ring3">
+                      <div className="ring2">
+                        <div className="ring1">
+                          {/* <div className="logoContainer">
                             
                           </div> */}
                         </div>

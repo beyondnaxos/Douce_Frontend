@@ -22,7 +22,8 @@ img {
 
 
 .bg {
-    
+    /* position: fixed;
+    top: 50px; */
     overflow: hidden;
     background-color: #2c2b2c;
     width: 95vw;
