@@ -9,7 +9,7 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import SignUp from './pages/signup';
 import SignIn from './pages/signin';
-
+import Tarifs from './pages/tarifs';
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
      <Routes>
        <Route path="/" element={<Home />} />
        <Route path="/about" element={< About /> } />
+       <Route path="/tarifs" element={<Tarifs />} />
        <Route path="/contact" element={<Contact />} />
        <Route path="/signin" element={<SignIn />} />
        <Route path="/sign-up" element={<SignUp />} />

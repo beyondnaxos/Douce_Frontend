@@ -25,7 +25,7 @@ display: flex;
 align-items: center;
 text-decoration: none;
 padding: 0 1rem;
-font-size: 1.3rem;
+font-size: 1.5rem;
 height: 100%;
 cursor: pointer;
 &:hover {
@@ -72,6 +72,7 @@ export const NavBtnLink = styled(Link)`
   background: transparent;
   padding: 10px 22px;
   color: #fff;
+  font-size: 1.3rem;
   outline: none;
   border: 1px solid #fff;
   cursor: pointer;

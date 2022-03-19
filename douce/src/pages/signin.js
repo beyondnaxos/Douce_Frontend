@@ -1,11 +1,17 @@
 import React from 'react'
+import HomeCard from '../components/HomeCard/HomeCard';
 
-function SignIn() {
-    return (
-        <div>
-            <h1>Sign In</h1>
+function Contact() {
+    return (    
+        < >
+        <div className='cards'>
+        <HomeCard />
+        {/* <HomeCard />
+        <HomeCard />
+        <HomeCard /> */}
         </div>
-    )
-}
+        </>
+    );
+};
 
-export default SignIn;
+export default Contact;

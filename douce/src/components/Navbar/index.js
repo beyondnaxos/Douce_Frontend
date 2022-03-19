@@ -21,17 +21,18 @@ const Navbar = () => {
             <Bars />
 
             <NavMenu>
-                <NavLink 
-                  to="/" 
-                  activestyle={{ color:'black' }}
-                >
-                    Home
-                </NavLink>
+                
                 <NavLink 
                   to="/about" 
                   activestyle={{ color: 'black' }}
                 >
-                    About
+                    Infos
+                </NavLink>
+                <NavLink 
+                  to="/tarifs" 
+                  activestyle={{ color: 'black' }}
+                >
+                    Tarifs
                 </NavLink>
                 <NavLink 
                   to="/contact" 
@@ -43,10 +44,10 @@ const Navbar = () => {
                   to="/signin" 
                   activestyle={{ color: 'black' }}
                 >
-                    Sign In
+                    Se connecter
                 </NavLink>
                 <NavBtn>
-                    <NavBtnLink to="/sign-up">Sign Up</NavBtnLink>                
+                    <NavBtnLink to="/sign-up">S'inscrire</NavBtnLink>                
                 </NavBtn>
             </NavMenu> 
            </Nav> 
