@@ -1,40 +1,37 @@
 import React from 'react';
 import './HomeCard.scss';
-import cardImage from './cardImage.svg'
 import Typewriter from 'typewriter-effect';
 
 
-const Homecard = () => {
-
-    const name = 'Douce';
-
-
-
+const Homecard = (props) => {
 
     return (
         <div className='card-container'>
             <div className='card-image-container'>
-                <img src={cardImage} alt="" />
+                <img src={props.img} alt="" />
             </div>
             <div className='card-bloc-text-container'>
                 <div className='card-bloc-text-child'>
                     <h1><Typewriter
                         options={{
-                            strings: [name],
+                            strings: [props.title],
                             autoStart: true,
                             loop: true,
+                            pauseFor: 50000,
                         }}
-                    /></h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit consectetur deleniti.</p>
+                        /></h1>
+                    <p>{props.description}</p>
 
                 </div>
                 <div className='onHoverText'>
                     <h2 className='titleHover'> Précisions</h2>
                     <p><Typewriter
                         options={{
-                            strings: ['Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quam optio non a, repellat, molestiae expedita dolore suscipit rem, ad aperiam corporis iste repellendus quibusdam dicta. Accusantium labore dolores vero! Illum odit vero quo eius quae eveniet labore nostrum itaque officia voluptate sapiente a facilis hic sequi dignissimos id inventore architecto nobis dolore blanditiis dolor, illo dicta corrupti!'],
+                            strings: ['Lorem ipsum, dolor sit amet consectetu dolor, illo dicta corrupti!'],
                             autoStart: true,
+                            delay: 10,
                             loop: true,
+                            pauseFor: 50000,
                         }}
                     /></p>
                 </div>

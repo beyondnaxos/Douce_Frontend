@@ -92,6 +92,30 @@
   align-items: center;
   justify-content: space-between;
 }
+.bg-about {
+  margin-left: 12%;
+  margin-right: 12%;
+  position: absolute;
+  width: 76%;
+  height: 100vh;
+  top: 10px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-container {
+  /* background-color: rgba(253, 162, 212, 0.966); */
+  height: 60%;
+  margin-top: 50px;
+  width: 100%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 
 .cards2{
   justify-content: center;

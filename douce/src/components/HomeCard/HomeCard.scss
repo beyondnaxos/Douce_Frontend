@@ -1,13 +1,13 @@
 .card-container {
-  width: 220px;
+  width: 280px;
   height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   z-index: 200;
-  background-color: #fff;
-  box-shadow: 0px 5px 10px rgba(255, 30, 225, 0.4);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   padding: 20px;
   transform: rotateY(0deg);
@@ -16,7 +16,7 @@
   transition: all 0.45s ease-in-out;
   &:hover {
     
-    width: 40%;
+    width: 26%;
     flex-direction: row;
   }
   
@@ -27,21 +27,26 @@
     margin-right: 20px;
   }
   &:hover  .card-bloc-text-container {
+    transition: all 0.45s ease-in-out;
     height: 100%;
+    width: 90%;
+    padding-top: 30px;
     justify-content: flex-start;
     align-items: flex-start;
     
   }
   &:hover  .card-bloc-text-child {
     height: 60px;
+    padding: 10px;
     
     
   }
   &:hover  .onHoverText {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     filter: opacity(1);
-    width: 100%;
+    width: 95%;
     opacity: 1;
     height: 100%;
     
@@ -49,6 +54,7 @@
   }
   &:hover  .onHoverText p {
     display: flex;
+    margin: 0;
     flex-direction: column;
     
   }
@@ -58,6 +64,8 @@
     
   }
 }
+
+
 
 .onHoverText {
   
@@ -105,11 +113,13 @@
 .card-bloc-text-container {
   width: 100%;
   height: 135px;
+  transition: all 0.45s ease-in-out;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .card-bloc-text-child {
