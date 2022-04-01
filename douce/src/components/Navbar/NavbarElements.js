@@ -26,10 +26,11 @@ align-items: center;
 text-decoration: none;
 padding: 0 1rem;
 font-size: 1.5rem;
+font-weight: 400;
 height: 100%;
 cursor: pointer;
 &:hover {
-  color: black;
+  color: #fff;
 }
 `;
 

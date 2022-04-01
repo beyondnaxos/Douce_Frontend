@@ -1,12 +1,18 @@
 import React from 'react';
 import './HomeCard.scss';
 import Typewriter from 'typewriter-effect';
+import { motion } from 'framer-motion'
 
 
 const Homecard = (props) => {
 
     return (
-        <div className='card-container'>
+        <motion.div 
+        exit={{ opacity: 0 }} 
+        animate={{ opacity: 1 }} 
+        className='card-container'
+        initial={{ opacity: 0 }}
+        >
             <div className='card-image-container'>
                 <img src={props.img} alt="" />
             </div>
@@ -19,7 +25,7 @@ const Homecard = (props) => {
                             loop: true,
                             pauseFor: 50000,
                         }}
-                        /></h1>
+                    /></h1>
                     <p>{props.description}</p>
 
                 </div>
@@ -37,7 +43,7 @@ const Homecard = (props) => {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     );
 }
 

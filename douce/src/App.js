@@ -10,25 +10,27 @@ import Contact from './pages/contact';
 import SignUp from './pages/signup';
 import SignIn from './pages/signin';
 import Tarifs from './pages/tarifs';
-
+import { AnimatePresence } from 'framer-motion'
 function App() {
   return (
-    
-    
+
     <Router>
       <div className='main'>
-     <Background />
-     <Navbar />
-     </div>
-     <Routes>
-       <Route path="/" element={<Home />} />
-       <Route path="/about" element={< About /> } />
-       <Route path="/tarifs" element={<Tarifs />} />
-       <Route path="/contact" element={<Contact />} />
-       <Route path="/signin" element={<SignIn />} />
-       <Route path="/sign-up" element={<SignUp />} />
-     </Routes>
-   </Router>
+        <Background />
+        <Navbar />
+      </div>
+      <AnimatePresence >
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={< About />} />
+          <Route path="/tarifs" element={<Tarifs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/sign-up" element={<SignUp />} />
+        </Routes>
+      </AnimatePresence>
+    </Router>
+    
   );
 }
 
