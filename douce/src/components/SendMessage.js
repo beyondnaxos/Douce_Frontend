@@ -23,7 +23,7 @@ function SendMessage({messages}) {
       setMsg('')
       
     
-      messages.current.scrollTop = messages.current.scrollHeight
+      messages.current.scrollIntoView() 
 
       
 

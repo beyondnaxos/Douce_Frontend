@@ -6,16 +6,22 @@
     justify-content: space-between;
     height: 450px;
     border-radius: 30px;
+    min-height: 0;
 }
 
+
+.msgs-container {
+    /* flex: 1; */
+    overflow: auto;
+}
 .msgs {
     height: 350px;
     width: 100%;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    overflow:hidden;
-
+    justify-content: flex-end; */
+    /* flex: 1;
+    overflow:auto; */
 }
 
 .msg-container {
