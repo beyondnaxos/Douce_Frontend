@@ -11,7 +11,16 @@ import SignUp from './pages/signup';
 import SignIn from './pages/signin';
 import Tarifs from './pages/tarifs';
 import { AnimatePresence } from 'framer-motion'
+import {useAuthState} from 'react-firebase-hooks/auth'
+import { auth } from './firebase';
+
+
+
+
 function App() {
+
+  const [user] = useAuthState(auth)
+
   return (
 
     <Router>
@@ -21,13 +30,16 @@ function App() {
       </div>
       <AnimatePresence >
         <Routes>
+          
           <Route path="/" element={<Home />} />
           <Route path="/about" element={< About />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/signin" element={<SignIn />} />
-          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/signup" element={<SignUp />} />
+          
         </Routes>
+
       </AnimatePresence>
     </Router>
     

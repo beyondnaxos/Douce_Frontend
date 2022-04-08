@@ -1,7 +1,10 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import HomeXXL from '../components/HomeXXL/HomeXXL';
-import { motion } from 'framer-motion';
+
+
+
+
 const Home = () => {
   return (
       <>
