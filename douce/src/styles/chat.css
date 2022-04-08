@@ -7,6 +7,9 @@
     height: 450px;
     border-radius: 30px;
     min-height: 0;
+    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-width: 40px;
+    width: 390px;
 }
 
 
@@ -25,8 +28,9 @@
 }
 
 .msg-container {
-    height: 52px;
+    min-height: 52px;
     display: flex;
+   
     
    
 
@@ -46,30 +50,44 @@
     align-items: center;
     padding: 0 10px 0 10px;
     column-gap: 10px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 
+    row-gap: 30px;
+    max-width: fit-content;
 }
 
 .sent {
    
-background-color: rgb(248, 165, 227);
+background-color: rgb(226, 95, 243);
     flex-direction: row-reverse;
-    border-radius:  10px 0  0 10px;
-    
+    border-radius:  10px  10px;
+    color: orange;
 }
 
 .received {
-    background-color: rgb(101, 193, 255);
-    
-    border-radius: 0 10px 10px 0 ;
+    background-color: rgb(122, 66, 253);
+    border-radius:  10px  10px;
+ 
+}
+
+
+.sent p{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+.received p {
+    color: #ffffff;
+    font-weight: 400;
+
 }
 
 
 
 .msg-photo {
-    height: 25px;
+    height: 26px;
     width: auto;
-    /* border-radius: 15px; */
+    border-radius: 30000px;
+    border: 2px solid #ffffff;
     margin: 0;
     
     
@@ -79,12 +97,14 @@ background-color: rgb(248, 165, 227);
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(12, 12, 12);
+
 }
 
-
-  
- 
-  
+.send-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
   
 
 

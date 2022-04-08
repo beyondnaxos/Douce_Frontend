@@ -44,8 +44,9 @@ function Chat() {
                     <div ref={messagesEndRef} />
                 </div>
             </div>
-
+            <div className='send-container'>
             <SendMessage messages={messagesEndRef} />
+            </div>
         </div>
     )
 }
