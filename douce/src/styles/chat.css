@@ -1,10 +1,11 @@
 .bg-chat {
     background-color: #fafafa;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 400px;
+    height: 450px;
+    border-radius: 30px;
 }
 
 .msgs {
@@ -12,18 +13,21 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    overflow:hidden;
 
 }
 
 .msg-container {
     height: 52px;
     display: flex;
-    align-items: center;
+    
    
 
 }
 
 .sent-container {
+    
     justify-content: flex-end;
 }
 .received-container {
@@ -34,13 +38,16 @@
     height: 40px;
     display: flex;
     align-items: center;
-
+    padding: 0 10px 0 10px;
+    column-gap: 10px;
+    margin-bottom: 20px;
 
 }
 
 .sent {
    
 background-color: rgb(248, 165, 227);
+    flex-direction: row-reverse;
     border-radius:  10px 0  0 10px;
     
 }
@@ -58,13 +65,21 @@ background-color: rgb(248, 165, 227);
     width: auto;
     /* border-radius: 15px; */
     margin: 0;
-    padding-left: 10px;
+    
     
 }
 
 .msg-text {
-    margin-left: 15px;
-    margin-right: 25px;
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(12, 12, 12);
 }
+
+
+  
+ 
+  
+  
+
+
+  

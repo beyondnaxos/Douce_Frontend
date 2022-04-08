@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { auth, db } from '../firebase'
 import SendMessage from './SendMessage'
 import SignOut from './SignOut'
 import '../styles/chat.css'
 
 function Chat() {
+
 
     const [messages, setMessages] = useState([])
     console.log(messages)
@@ -14,6 +15,15 @@ function Chat() {
             setMessages(snapshot.docs.map(doc => doc.data()))
         })
     }, [])
+
+    const messagesEndRef = useRef(null)
+
+  const scrollToBottom = () => {
+    messagesEndRef.current.scrollIntoView({ behavior: "smooth" })
+  }
+
+  useEffect(scrollToBottom, [messages]);
+
 
     return (
         <div className='bg-chat'>
@@ -29,8 +39,8 @@ function Chat() {
                 ))}
             </div>
 
-            <SendMessage />
-
+            <SendMessage messages={messagesEndRef}/>
+            <div ref={messagesEndRef} />
         </div>
     )
 }

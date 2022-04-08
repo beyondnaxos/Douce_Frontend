@@ -3,7 +3,11 @@ import {db , auth} from '../firebase'
 import firebase from 'firebase/compat/app'
 import { Input , Button } from '@material-ui/core'
 
-function SendMessage({ scroll }) {
+function SendMessage({messages}) {
+
+  
+
+
   const [msg, setMsg] = useState('')
 
   async function sendMessage(e) {
@@ -18,6 +22,12 @@ function SendMessage({ scroll }) {
       })
       setMsg('')
       
+    
+      messages.current.scrollTop = messages.current.scrollHeight
+
+      
+
+
   }
   return (
       <div>
