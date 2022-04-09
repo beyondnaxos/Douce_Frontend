@@ -7,8 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages';
 import About from './pages/about';
 import Contact from './pages/contact';
-import SignUp from './pages/signup';
-import SignIn from './pages/signin';
+// import SignUp from './pages/signup';
+// import SignIn from './pages/signin';
 import Tarifs from './pages/tarifs';
 import { AnimatePresence } from 'framer-motion'
 import {useAuthState} from 'react-firebase-hooks/auth'
@@ -35,8 +35,8 @@ function App() {
           <Route path="/about" element={< About />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
+          {/* <Route path="/signin" element={<SignIn />} /> */}
+          {/* <Route path="/signup" element={<SignUp />} /> */}
           
         </Routes>
 

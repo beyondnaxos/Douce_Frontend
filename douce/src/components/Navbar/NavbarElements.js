@@ -15,22 +15,27 @@ export const NavLogo = styled(Link)`
   cursor: pointer;
   color: #fff;
   text-decoration: none;
-  
+  margin-right: 4rem;
 
 `;
 
 export const NavLink = styled(Link)`
-color: #fff;
 display: flex;
 align-items: center;
 text-decoration: none;
-padding: 0 1rem;
+padding: 0.5rem 1rem;
 font-size: 1.5rem;
+margin-right: 1rem;
 font-weight: 400;
 height: 100%;
 cursor: pointer;
+border-radius: 5px;
+color: rgb(212, 4, 132);
+background-color: white;
+transition: all 0.3s ease-in-out;
 &:hover {
-  color: #fff;
+  color: white;
+  background-color: rgb(212, 4, 132);
 }
 `;
 

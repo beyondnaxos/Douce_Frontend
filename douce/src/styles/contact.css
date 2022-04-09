@@ -1,0 +1,13 @@
+.big-container {
+    justify-content: center !important;
+    column-gap: 30px;
+ 
+}
+
+
+.contact-container {
+/* background-color: blue; */
+color: white;
+height: 500px;
+width: 30%;
+}

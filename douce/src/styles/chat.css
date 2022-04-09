@@ -1,36 +1,39 @@
 .bg-chat {
     background-color: #fafafa;
-    padding: 30px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 450px;
     border-radius: 30px;
     min-height: 0;
-    scrollbar-color: #6969dd #e0e0e0;
-    scrollbar-width: 40px;
-    width: 390px;
+    width:17%;
+    min-width: 250px;
 }
+
+
 
 
 .msgs-container {
     /* flex: 1; */
     overflow: auto;
+    height: 350px;
+    /* hide scrollbar */
+    
+   
+
 }
 .msgs {
-    height: 350px;
+    height: 300px;
     width: 100%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-end; */
-    /* flex: 1;
-    overflow:auto; */
+   
+ 
 }
 
 .msg-container {
-    min-height: 52px;
+    /* min-height: 43px; */
     display: flex;
-   
+  
     
    
 
@@ -45,12 +48,12 @@
 }
 
 .msg {
-    height: 40px;
+    /* max-height: 35px; */
     display: flex;
     align-items: center;
-    padding: 0 10px 0 10px;
+    padding: 5px 10px 9px 10px;
     column-gap: 10px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 10px;
 
     row-gap: 30px;
     max-width: fit-content;
@@ -58,14 +61,14 @@
 
 .sent {
    
-background-color: rgb(226, 95, 243);
+background-color: rgb(212, 4, 132);
     flex-direction: row-reverse;
     border-radius:  10px  10px;
     color: orange;
 }
 
 .received {
-    background-color: rgb(122, 66, 253);
+    background-color: rgb(40, 0, 92);
     border-radius:  10px  10px;
  
 }
@@ -73,18 +76,20 @@ background-color: rgb(226, 95, 243);
 
 .sent p{
     color: rgb(255, 255, 255);
-    font-weight: 400;
+    font-weight: 500;
+    margin-left: 10px;
 }
 .received p {
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 500;
+    margin-right: 10px;
 
 }
 
 
 
 .msg-photo {
-    height: 26px;
+    height: 15px;
     width: auto;
     border-radius: 30000px;
     border: 2px solid #ffffff;
@@ -97,6 +102,7 @@ background-color: rgb(226, 95, 243);
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(12, 12, 12);
+    margin: 0;
 
 }
 

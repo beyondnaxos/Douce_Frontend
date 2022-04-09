@@ -3,18 +3,44 @@ import { auth, db } from '../firebase'
 import SendMessage from './SendMessage'
 import SignOut from './SignOut'
 import '../styles/chat.css'
+// import useSound from 'use-sound'
+import boop from './boop.mp3'
 
 function Chat() {
 
+  
 
     const [messages, setMessages] = useState([])
+
+    //run boop once when a new message is added
+    // const audio = useRef(null)
+    // useEffect(() => {
+    //     audio.current = new Audio(boop)
+    //     // put the volume at 25%
+    //     audio.current.volume = 0.25
+    //     audio.current.play()
+    // }, [messages])
+
+    // when the messages state is updated, run the sound boop one time 
+    // useEffect(() => {
+    //     const audio = new Audio(boop)
+    //     audio.volume = 0.25
+    //     audio.play()
+    // }, [messages])
+
+  
+    
+ 
+
+    
+    
     console.log(messages)
 
     useEffect(() => {
         db.collection('messages').orderBy('createdAt').limit(50).onSnapshot(snapshot => {
             setMessages(snapshot.docs.map(doc => doc.data()))
         })
-
+        
         // scrollToBottom()
     }, [])
 

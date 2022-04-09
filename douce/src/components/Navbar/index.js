@@ -4,9 +4,8 @@ import {
     NavLogo,
     NavLink,
     Bars,
-    NavMenu,
-    NavBtn,
-    NavBtnLink,
+    NavMenu
+    
 } from "./NavbarElements";
 import './nav.css'
 import douce from "./douce.svg"
@@ -24,22 +23,25 @@ const Navbar = () => {
                     <NavLink
                         to="/about"
                         activestyle={{ color: 'black' }}
-                    >
+                        
+                        >
                         Infos
                     </NavLink>
                     <NavLink
                         to="/tarifs"
                         activestyle={{ color: 'black' }}
-                    >
+                        
+                        >
                         Tarifs
                     </NavLink>
                     <NavLink
                         to="/contact"
                         activestyle={{ color: 'black' }}
+                        
                     >
                         Contact
                     </NavLink>
-                    <NavLink
+                    {/* <NavLink
                         to="/signin"
                         activestyle={{ color: 'black' }}
                     >
@@ -47,7 +49,7 @@ const Navbar = () => {
                     </NavLink>
                     <NavBtn>
                         <NavBtnLink to="/sign-up">S'inscrire</NavBtnLink>
-                    </NavBtn>
+                    </NavBtn> */}
                 </NavMenu>
             </Nav>
         </>

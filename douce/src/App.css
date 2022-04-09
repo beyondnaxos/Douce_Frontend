@@ -8,14 +8,21 @@
   position: absolute;
   top: 30px;
   border-radius: 30px;
-  left: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* width: 60%; */
   /* width: 48vw ; */
+  margin-right: 55px;
 }
+
+
 
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+
 }
 
 
