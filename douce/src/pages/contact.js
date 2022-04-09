@@ -17,8 +17,9 @@ function Contact() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         className='cards big-container'>
-
+           
          {user ? <Chat /> :<SignIn />}
+           
         <div className='contact-container'>
             <div className='contact-header'>
                 {/* texte de contact et phrase d'accroche */}
@@ -31,6 +32,22 @@ function Contact() {
                     nisi nunc ultricies nisi, euismod eget nunc.
                     Pellentesque habitant morbi tristique senectus et netus et
                     malesuada fames ac turpis egestas.
+                </p>
+
+        
+            </div>
+            <div className='contact-header'>
+                {/* texte de contact et phrase d'accroche */}
+                <h1>Vous avec une proposition commerciale? </h1>
+                </div>
+                <div className='contact-text'>
+                <p>
+                    Contactez-moi par mail à l'adresse suivante :
+                    <br/>
+        
+                    <p>
+                        julie@douce.bio
+                    </p>
                 </p>
 
         
