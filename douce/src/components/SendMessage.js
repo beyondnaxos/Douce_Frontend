@@ -12,11 +12,12 @@ function SendMessage({messages}) {
 
   async function sendMessage(e) {
       e.preventDefault()
-      const { uid, photoURL } = auth.currentUser
+      const { uid, photoURL, displayName } = auth.currentUser
 
       await db.collection('messages').add({
           text: msg,
           photoURL,
+          displayName,
           uid,
           createdAt: firebase.firestore.FieldValue.serverTimestamp()
       })

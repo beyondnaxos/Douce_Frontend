@@ -26,14 +26,10 @@ function Contact() {
                 <h1>Vous souhaitez prendre rendez-vous ? </h1>
                 </div>
                 <div className='contact-text'>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris euismod, nunc eget consectetur consectetur,
-                    nisi nunc ultricies nisi, euismod eget nunc.
-                    Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas.
-                </p>
-
+                <h2>
+                    Appelez-moi au 06 06 06 06 00
+                </h2>
+                <p ><strong>du lundi au samedi de 09h00 à 19h00</strong> </p>
         
             </div>
             <div className='contact-header'>

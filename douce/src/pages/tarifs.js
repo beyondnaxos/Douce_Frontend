@@ -1,15 +1,10 @@
 import React from 'react'
-import HomeCard from '../components/HomeCard/HomeCard';
+import Corps from '../components/Menu/Corps'
 
 function Contact() {
     return (    
         < >
-        <div className='cards'>
-        <HomeCard />
-        {/* <HomeCard />
-        <HomeCard />
-        <HomeCard /> */}
-        </div>
+        <Corps />
         </>
     );
 };

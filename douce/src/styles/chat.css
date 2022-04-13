@@ -50,49 +50,58 @@
 .msg {
     /* max-height: 35px; */
     display: flex;
+    
     align-items: center;
+    
     padding: 5px 10px 9px 10px;
-    column-gap: 10px;
+    column-gap: 9px;
     margin-bottom: 10px;
 
-    row-gap: 30px;
+
+    /* row-gap: 30px; */
     max-width: fit-content;
 }
 
 .sent {
    
-background-color: rgb(212, 4, 132);
-    flex-direction: row-reverse;
-    border-radius:  10px  10px;
-    color: orange;
+/* background-color: rgb(238, 238, 238); */
+flex-direction: row-reverse;
+border-radius:  10px  10px;
+color: rgb(67, 32, 223);
 }
 
 .received {
-    background-color: rgb(40, 0, 92);
+    /* background-color: rgb(233, 233, 233); */
+    flex-direction: row;
     border-radius:  10px  10px;
+    color: rgb(127, 47, 255);
+    font-weight: 500;
  
 }
 
 
-.sent p{
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    margin-left: 10px;
+.sent .msg-text {
+    color: rgb(8, 8, 8);
+ 
+    
 }
-.received p {
-    color: #ffffff;
+.received .msg-text {
+    color: rgb(8, 8, 8);
     font-weight: 500;
-    margin-right: 10px;
-
+    
+    
+    text-align: start;
+    
+    
 }
 
 
 
 .msg-photo {
-    height: 15px;
-    width: auto;
+    
+    width: 15px;
     border-radius: 30000px;
-    border: 2px solid #ffffff;
+    /* border: 2px solid #ffffff; */
     margin: 0;
     
     
@@ -103,6 +112,12 @@ background-color: rgb(212, 4, 132);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(12, 12, 12);
     margin: 0;
+   width: 100%;
+
+    text-align: start;  
+    
+    font-size: 14px;
+    
 
 }
 
@@ -112,3 +127,52 @@ background-color: rgb(212, 4, 132);
     justify-content: flex-end;
 }
   
+.id-container {
+    display: flex;
+   
+    height: 20px;
+    width: 100%;
+}
+
+.sent-id {
+    
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    
+}
+.sent-id img{
+    
+    margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.sent-id p{
+    
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: end;
+
+}
+
+.received-id {
+    flex-direction: column;
+    height: 100%;
+
+}
+.received-id img {
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.received-id p {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    
+}
