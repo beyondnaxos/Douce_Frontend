@@ -11,7 +11,6 @@ function Corps() {
     const [pieds, setPieds] = useState([])
     const [makeup, setMakeup] = useState([])
 
-
     useEffect(() => {
         axios.get('http://localhost:8080/api/menu/epilation')
             .then(res => {
@@ -54,7 +53,7 @@ function Corps() {
                         {epilation.map(item => (
                             <div className="card-menu-container" style={{ width: '18rem' }}>
                                 <h5 className="card-title">{item.bis === null ? item.nom + '' : item.nom + ' ' + item.bis} </h5>
-                                <p className="card-price">{item.prix}</p>
+                                <p className="card-price">{item.prix + '€'}</p>
                             </div>
                         ))}
                     </div>
@@ -62,7 +61,7 @@ function Corps() {
                         {corps.map(item => (
                             <div className="card-menu-container" style={{ width: '18rem' }}>
                                 <h5 className="card-title">{item.bis === null ? item.nom + '' : item.nom + ' ' + item.bis} </h5>
-                                <p className="card-price">{item.prix}</p>
+                                <p className="card-price">{item.prix + '€'}</p>
                             </div>
                         ))}
                     </div>
@@ -73,7 +72,7 @@ function Corps() {
                                 <h5 className="card-title">{item.nom}</h5>
                                 <p className="card-text">{item.bis}</p>
                                 <p className="card-price">{item.prixclassic + '€'}</p>
-                                <p className="card-price">{item.prixpremium === null ? item.prixpremium + ' ' : item.prixpremium + '€'}</p>
+                                <p className="card-price">{item.prixpremium === 0 ? '###' : item.prixpremium + '€'}</p>
                             </div>
                         ))}
                     </div>
