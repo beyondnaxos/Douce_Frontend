@@ -170,10 +170,10 @@
   position: relative;
   top: 0;
   left: 0;
-  fill: #5d8fec;
+  fill: #e235b7;
   width: 30vw;
   z-index: 0;
-  animation: turn2  20s ease-in-out infinite;
+  animation: turn2  40s ease-in-out infinite;
   transform-origin: -30% -30%;
 }
 

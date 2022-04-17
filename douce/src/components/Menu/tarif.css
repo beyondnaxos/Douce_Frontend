@@ -1,3 +1,5 @@
+
+
 .big-card-container {
     display: flex;
     flex-direction: row;
@@ -6,8 +8,10 @@
     
     column-gap: 10px;
     width: 100%;
+    
 }
 .card-body {
+    
     display: flex;
     flex-direction: column;
     height: 530px;
@@ -20,7 +24,7 @@
 }
 
 .front-card-style {
-    background-color: rgb(238, 93, 194);
+    background-color: rgb(39, 39, 39);
     width: 100% !important;
     height: 100% !important;
     position: relative;
@@ -44,7 +48,7 @@
 }
 
 .front-card-title {
-    height: 50%;
+    height: 40%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -52,11 +56,43 @@
 }
 
 .front-card-text{
-    height: 50%;
+    height: 10%;
     width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+.front-card-image{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.card-image-container {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+    height: 200px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.front-card-image img{
+    height: 100%;
+    width: 100%;
+    animation-name: floating2;
+    animation-duration: 2.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
 }
 
 .front-card-text p {
@@ -101,4 +137,24 @@
     width: 10%;
     text-align: end;
     padding-right: 10px;
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(7px, 0px); }
+    100%   { transform: translate(0, -0px); }   
+}
+@keyframes floating2 {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 7px); }
+    100%   { transform: translate(0, -0px); }   
 }

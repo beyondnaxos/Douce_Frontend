@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import './tarif.css'
 import ReactCardFlip from 'react-card-flip';
+import spatule from './spatule.svg'
+import body from './soinscorps.svg'
+import face from './visage.svg'
 
+import mainspiedspieds from './mainpiedspieds.svg'
 function Corps() {
 
     const [isFlippedFirst, setIsFlippedFirst] = useState(false);
@@ -68,6 +72,7 @@ function Corps() {
             )
     }, [])
 
+  
 
     return (
         < >
@@ -91,6 +96,11 @@ function Corps() {
                                     <div className='front-card-title'>
                                     <h1>Epilation</h1>
                                     </div>
+                                    <div className='front-card-image'>
+                                        <div className='card-image-container'>
+                                    <img src={spatule} alt="" />
+                                     </div>
+                                    </div>
                                     <div className='front-card-text'>
                                     <p>Cliquer pour affichier</p>
                                     </div>
@@ -104,7 +114,7 @@ function Corps() {
                     <div onClick={handleClickFirst} className='back-card'>
                         <div className="card-body">
                             {epilation.map(item => (
-                                <div className="card-menu-container" style={{ width: '18rem' }}>
+                                <div className="card-menu-container"  style={{ width: '18rem' }}>
                                     <h5 className="card-title">{item.bis === null ? item.nom + '' : item.nom + ' ' + item.bis} </h5>
                                     <p className="card-price">{item.prix + '€'}</p>
                                 </div>
@@ -131,6 +141,11 @@ function Corps() {
                                 <div className='front-card-text-container'>
                                     <div className='front-card-title'>
                                     <h1>Soins Corps</h1>
+                                    </div>
+                                    <div className='front-card-image'>
+                                        <div className='card-image-container'>
+                                    <img src={body} alt="" />
+                                     </div>
                                     </div>
                                     <div className='front-card-text'>
                                     <p>Cliquer pour affichier</p>
@@ -172,6 +187,11 @@ function Corps() {
                                     <div className='front-card-title'>
                                     <h1>Soins Visage</h1>
                                     </div>
+                                    <div className='front-card-image'>
+                                        <div className='card-image-container'>
+                                    <img src={face} alt="" />
+                                     </div>
+                                    </div>
                                     <div className='front-card-text'>
                                     <p>Cliquer pour affichier</p>
                                     </div>
@@ -212,6 +232,11 @@ function Corps() {
                                 <div className='front-card-text-container'>
                                     <div className='front-card-title'>
                                     <h1>Mains & Pieds</h1>
+                                    </div>
+                                    <div className='front-card-image'>
+                                        <div className='card-image-container'>
+                                    <img src={mainspiedspieds} alt="" />
+                                     </div>
                                     </div>
                                     <div className='front-card-text'>
                                     <p>Cliquer pour affichier</p>
