@@ -170,7 +170,7 @@
   position: relative;
   top: 0;
   left: 0;
-  fill: #e235b7;
+  fill: rgb(226, 88, 169);
   width: 30vw;
   z-index: 0;
   animation: turn2  40s ease-in-out infinite;

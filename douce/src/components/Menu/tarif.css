@@ -22,9 +22,21 @@
     padding: 10px;
     border-radius: 20px;
 }
+.card-body__back {
+    
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    row-gap: 10px;
+    justify-content: flex-start;
+    background-color: rgb(54, 54, 54);
+    width: 298px;
+    padding: 10px;
+    border-radius: 20px;
+}
 
 .front-card-style {
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(37, 37, 37);
     width: 100% !important;
     height: 100% !important;
     position: relative;
@@ -79,6 +91,7 @@
     
     height: 200px;
     background-color: rgb(36, 36, 36);
+    
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -87,6 +100,7 @@
 }
 .front-card-image img{
     height: 100%;
+    
     width: 100%;
     animation-name: floating2;
     animation-duration: 2.3s;
@@ -102,6 +116,10 @@
     text-align: center;
 }
 
+.card-menu-container .card-title{
+    font-weight: bold;
+}
+
 .bubble {
     position: relative;
     width: 450px;
@@ -115,7 +133,7 @@
 
 .card-menu-container {
     height: 35px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.2);
     column-gap: 30px;
     display: flex;
