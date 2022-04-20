@@ -23,24 +23,20 @@ export const NavLink = styled(Link)`
 display: flex;
 align-items: center;
 text-decoration: none;
-font-family: 'helvetica', sans-serif;
+font-family: 'Sora', sans-serif;
 padding: 0.5rem 1rem;
 font-size: 1.5rem;
 margin-right: 1rem;
 font-weight: 400;
 height: 100%;
-cursor: pointer;
-border-radius: 5px;
+cursor : pointer;
+
 color: white;
-border : 1px solid white;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+// border : 1px solid white;
+
 transition: all 0.25s ease-in-out;
 &:hover {
-  color: rgb(255, 70, 200);
-  background: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-
-  ;
+  color: white;
 }
 `;
 

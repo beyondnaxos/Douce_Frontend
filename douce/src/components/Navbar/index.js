@@ -25,21 +25,21 @@ const Navbar = () => {
                         activestyle={{ color: 'black' }}
                         
                         >
-                        Infos
+                        INFOS
                     </NavLink>
                     <NavLink
                         to="/tarifs"
                         activestyle={{ color: 'black' }}
                         
                         >
-                        Tarifs
+                        TARIFS
                     </NavLink>
                     <NavLink
                         to="/contact"
                         activestyle={{ color: 'black' }}
                         
                     >
-                        Contact
+                        CONTACT
                     </NavLink>
                     {/* <NavLink
                         to="/signin"

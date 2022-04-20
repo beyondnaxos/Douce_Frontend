@@ -11,7 +11,7 @@
     
 }
 .card-body {
-    
+    cursor: url(cursor1.gif), auto;
     display: flex;
     flex-direction: column;
     height: 530px;
@@ -21,9 +21,12 @@
     width: 298px;
     padding: 10px;
     border-radius: 20px;
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -4px -4px 10px 0 rgba(255, 255, 255, 0.3);
 }
 .card-body__back {
-    
+    cursor: grab;
     display: flex;
     flex-direction: column;
     height: 530px;
@@ -33,6 +36,10 @@
     width: 298px;
     padding: 10px;
     border-radius: 20px;
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -4px -4px 10px 0 rgba(255, 255, 255, 0.3);
+    cursor: url(cursor1.gif), auto;
 }
 
 .front-card-style {
@@ -142,6 +149,21 @@
     background-color: white;
     padding-left: 10px;
     justify-content: space-between;
+ 
+}
+
+.card-menu-container-big {
+    height: 175px;
+    border-radius: 8px;
+    box-shadow:  0px 0px 10px 0px rgba(0,0,0,0.2);
+    column-gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding-left: 10px;
+    justify-content: space-between;
+
 }
 
 .card-title {
