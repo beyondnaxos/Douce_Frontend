@@ -5,6 +5,9 @@ import ReactCardFlip from 'react-card-flip';
 import spatule from './spatule.svg'
 import body from './soinscorps.svg'
 import face from './visage.svg'
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from '@mui/material/styles';
+
 
 import mainspiedspieds from './mainpiedspieds.svg'
 function Corps() {
@@ -72,6 +75,28 @@ function Corps() {
             )
     }, [])
 
+    //set tooltip background to black and text to white
+    const BootstrapTooltip = styled(({ className, ...props }) => (
+        <Tooltip {...props} arrow classes={{ popper: className }} />
+    ))(({ theme }) => ({
+        [`& .${tooltipClasses.arrow}`]: {
+            color: theme.palette.common.black,
+        },
+        [`& .${tooltipClasses.tooltip}`]: {
+            backgroundColor: theme.palette.common.black,
+            borderRadius: '10px',
+            minWith: '100%',
+            paddingLeft: '20px',
+            paddingRight: '20px',
+            paddingTop: '5px',
+            paddingBottom: '5px',
+            display: 'flex',
+            alignItems: 'center',
+            boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
+           
+            
+        },
+    }));
 
 
     return (
@@ -114,10 +139,12 @@ function Corps() {
                     <div onClick={handleClickFirst} className='back-card'>
                         <div className="card-body__back">
                             {epilation.map(item => (
+
                                 <div className="card-menu-container" style={{ width: '18rem' }}>
                                     <h5 className="card-title">{item.bis === null ? item.nom + '' : item.nom + ' ' + item.bis} </h5>
                                     <p className="card-price">{item.prix + '€'}</p>
                                 </div>
+
                             ))}
                         </div>
 
@@ -160,10 +187,13 @@ function Corps() {
                     <div onClick={handleClickSecond} className='back-card'>
                         <div className="card-body__back">
                             {corps.map(item => (
-                                <div className="card-menu-container" style={{ width: '18rem' }}>
-                                    <h5 className="card-title">{item.bis === null ? item.nom + '' : item.nom + ' ' + item.bis} </h5>
-                                    <p className="card-price">{item.prix + '€'}</p>
-                                </div>
+
+                                <BootstrapTooltip title={<p style={{ fontSize: '0.75rem', textAlign: 'center', width:'200px'}}>{item.commentaire.toUpperCase()}</p>} placement='bottom' arrow='true' disableInteractive >
+                                    <div className="card-menu-container" style={{ width: '18rem' }}>
+                                        <h5 className="card-title">{item.bis === null ? item.nom + '' : item.nom + ' ' + item.bis} </h5>
+                                        <p className="card-price">{item.prix + '€'}</p>
+                                    </div>
+                                </BootstrapTooltip >
                             ))}
                         </div>
                     </div>
@@ -206,27 +236,29 @@ function Corps() {
                         <div className="card-body__back">
                             <div className="card-menu-container" style={{ width: '18rem' }}>
 
-                                <h5 className="card-title">durée du soin</h5>
+                                <h5 className="card-title-small">Classic/Premium</h5>
                                 <p className="card-text"></p>
                                 <p className="card-price">30m</p>
                                 <p className="card-price">01h</p>
                             </div>
                             {visage.map(item => (
-                                <div className="card-menu-container" style={{ width: '18rem' }}>
 
+                               <BootstrapTooltip title={<p style={{ fontSize: '0.75rem', textAlign: 'center', width:'200px' }}>{item.commentaire.toUpperCase()}</p>} placement='top' arrow='true' disableInteractive >
+                                <div className="card-menu-container" style={{ width: '18rem' }}>
                                     <h5 className="card-title">{item.nom}</h5>
-                                    <p className="card-text">{item.bis}</p>
+                                    <p className="card-text-bio">{item.bis}</p>
                                     <p className="card-price">{item.prixclassic === null ? '###' : item.prixclassic + '€'}</p>
                                     <p className="card-price">{item.prixpremium === null ? '###' : item.prixpremium + '€'}</p>
                                 </div>
+                                </BootstrapTooltip>
                             ))}
-                            <div className="card-menu-container-big" style={{ width: '18rem' }}>
+                            {/* <div className="card-menu-container-big" style={{ width: '18rem' }}>
 
-                               
-                                
+
+
                                 <p className="card-price">30m</p>
-                                
-                            </div>
+
+                            </div> */}
                         </div>
 
                     </div>
@@ -268,23 +300,25 @@ function Corps() {
                     <div onClick={handleClickFourth} className='back-card'>
                         <div className="card-body__back">
                             <div className="card-menu-container" style={{ width: '18rem' }}>
-                                <h5 className="card-title">MAINS</h5>
+                                <h5 className="card-title-small">MAINS</h5>
 
                             </div>
                             {mains.map(item => (
+                                <BootstrapTooltip title={<p style={{ fontSize: '0.75rem', textAlign: 'center' }}>{item.commentaire.toUpperCase()}</p>} placement='top' arrow='true' disableInteractive >
                                 <div className="card-menu-container" style={{ width: '18rem' }}>
 
                                     <h5 className="card-title">{item.nom}</h5>
                                     <p className="card-text">{item.bis}</p>
                                     <p className="card-price">{item.prix + '€'} </p>
-
                                 </div>
+                                </BootstrapTooltip>
                             ))}
                             <div className="card-menu-container" style={{ width: '18rem' }}>
-                                <h5 className="card-title">PIEDS</h5>
+                                <h5 className="card-title-small">PIEDS</h5>
 
                             </div>
                             {pieds.map(item => (
+                                <BootstrapTooltip title={<p style={{ fontSize: '0.75rem', textAlign: 'center', width:'250px' }}>{item.commentaire.toUpperCase()}</p>} placement='top' arrow='true' disableInteractive >
                                 <div className="card-menu-container" style={{ width: '18rem' }}>
 
                                     <h5 className="card-title">{item.nom}</h5>
@@ -292,6 +326,7 @@ function Corps() {
                                     <p className="card-price">{item.prix + '€'} </p>
 
                                 </div>
+                                </BootstrapTooltip>
                             ))}
                             {/* {makeup.map(item => (
                             <div className="card-menu-container" style={{ width: '18rem' }}>

@@ -32,7 +32,7 @@
     height: 530px;
     row-gap: 10px;
     justify-content: flex-start;
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(59, 53, 59);
     width: 298px;
     padding: 10px;
     border-radius: 20px;
@@ -41,7 +41,18 @@
     -4px -4px 10px 0 rgba(255, 255, 255, 0.3);
     cursor: url(cursor1.gif), auto;
 }
+.card-text-bio {
+    color : green;
+    font-weight: 500;
+}
 
+.card-title-small {
+    color: rgb(39, 38, 38);
+    font-size: 15px;
+    font-weight: 500;
+    color: blue;
+   
+}
 .front-card-style {
     background-color: rgb(37, 37, 37);
     width: 100% !important;
@@ -173,7 +184,7 @@
 }
 .card-price {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     width: 10%;
     text-align: end;
     padding-right: 10px;
