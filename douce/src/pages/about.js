@@ -1,17 +1,15 @@
 import React from "react";
-
+import SliderAbout from "../components/Slider/SliderAbout";
 
 const About = () => {
 
     
 
     return (
-        <div className="bg-about">
-            <div className="about-container">
-            
-            </div>
+        <div className="cards">
+         
+            <SliderAbout />
         </div>
-
     );
 };
 

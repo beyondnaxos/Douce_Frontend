@@ -105,7 +105,8 @@ function Corps() {
                 <ReactCardFlip isFlipped={isFlippedFirst} flipDirection="horizontal">
                     <div onClick={handleClickFirst} className='front-card'>
                         <div className="card-body">
-                            <div className='front-card-style'>
+                            
+                            <div className='front-card-style '>
                                 {/* <div className='bubble'>
                                 </div> */}
                                 <div className='blob-container'>
@@ -188,9 +189,11 @@ function Corps() {
                         <div className="card-body__back">
                             {corps.map(item => (
 
-                                <BootstrapTooltip title={<p style={{ fontSize: '0.75rem', textAlign: 'center', width:'200px'}}>{item.commentaire.toUpperCase()}</p>} placement='bottom' arrow='true' disableInteractive >
-                                    <div className="card-menu-container" style={{ width: '18rem' }}>
-                                        <h5 className="card-title">{item.bis === null ? item.nom + '' : item.nom + ' ' + item.bis} </h5>
+                                <BootstrapTooltip title={<p style={{ fontSize: '0.75rem', textAlign: 'center', width:'200px'}}>{item.commentaire.toUpperCase()}</p>} placement='top' arrow='true' disableInteractive >
+                                    <div className="card-menu-container__corps" style={{ width: '18rem' }}>
+                                        
+                                        <h5 className="card-title">{item.nom}</h5>
+                                    <p className="card-text-bio">{item.bis === null ? ' ' : item.bis }</p>
                                         <p className="card-price">{item.prix + '€'}</p>
                                     </div>
                                 </BootstrapTooltip >
