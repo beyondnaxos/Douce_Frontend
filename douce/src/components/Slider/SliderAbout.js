@@ -8,13 +8,13 @@ function SliderAbout() {
         {
             id: 'first',
             title: 'A propos de moi',
-            text: 'Coucou ça va ? ',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima consequatur tempora non nisi numquam voluptatibus ipsam animi vitae autem.? ',
 
         },
         {
             id: 'second',
             title: 'Les produits utilisés',
-            text: 'Oui et toi',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima consequatur tempora non nisi numquam voluptatibus ipsam animi vitae autem.',
 
         },
         {
