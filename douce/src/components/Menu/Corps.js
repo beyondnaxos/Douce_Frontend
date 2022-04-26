@@ -25,21 +25,21 @@ function Corps() {
     const [makeup, setMakeup] = useState([])
 
     const handleClickFirst = (e) => {
-        e.preventDefault();
-        setIsFlippedFirst(!isFlippedFirst);
-    };
+        e.preventDefault()
+        setIsFlippedFirst(!isFlippedFirst)
+    }
     const handleClickSecond = (e) => {
-        e.preventDefault();
-        setIsFlippedSecond(!isFlippedSecond);
-    };
+        e.preventDefault()
+        setIsFlippedSecond(!isFlippedSecond)
+    }
     const handleClickThird = (e) => {
-        e.preventDefault();
-        setIsFlippedThird(!isFlippedThird);
-    };
+        e.preventDefault()
+        setIsFlippedThird(!isFlippedThird)
+    }
     const handleClickFourth = (e) => {
-        e.preventDefault();
-        setIsFlippedFourth(!isFlippedFourth);
-    };
+        e.preventDefault()
+        setIsFlippedFourth(!isFlippedFourth)
+    }
 
 
     useEffect(() => {
@@ -96,7 +96,7 @@ function Corps() {
            
             
         },
-    }));
+    }))
 
 
     return (

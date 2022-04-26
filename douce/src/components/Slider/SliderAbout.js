@@ -1,72 +1,83 @@
-import React , {useState} from 'react'
-import './Slider.css'
+import React, { useState } from 'react';
+import './Slider.css';
+import SliderChild from './SliderChild';
 function SliderAbout() {
 
-    const [isActiveFirst , setIsActiveFirst] = useState(true)
-    const [isActiveSecond , setIsActiveSecond] = useState(false)
-    const [isActiveThird , setIsActiveThird] = useState(false)
-    const [isActiveFourth , setIsActiveFourth] = useState(false)
-    const [isActiveFifth , setIsActiveFifth] = useState(false)
+    // const idList = ['first', 'second', 'third', 'fourth', 'fifth'];
+    const contentList = [
+        {
+            id: 'first',
+            title: 'A propos de moi',
+            text: 'Coucou ça va ? ',
 
-    const handleClickFirst = () => {
-        setIsActiveFirst(true)
-        setIsActiveSecond(false)
-        setIsActiveThird(false)
-        setIsActiveFourth(false)
-        setIsActiveFifth(false)
-    }
-    const handleClickSecond = () => {
-        setIsActiveFirst(false)
-        setIsActiveSecond(true)
-        setIsActiveThird(false)
-        setIsActiveFourth(false)
-        setIsActiveFifth(false)
-    }
-    const handleClickThird = () => {
-        setIsActiveFirst(false)
-        setIsActiveSecond(false)
-        setIsActiveThird(true)
-        setIsActiveFourth(false)
-        setIsActiveFifth(false)
-    }
-    const handleClickFourth = () => {
-        setIsActiveFirst(false)
-        setIsActiveSecond(false)
-        setIsActiveThird(false)
-        setIsActiveFourth(true)
-        setIsActiveFifth(false)
-    }
-    const handleClickFifth = () => {
-        setIsActiveFirst(false)
-        setIsActiveSecond(false)
-        setIsActiveThird(false)
-        setIsActiveFourth(false)
-        setIsActiveFifth(true)
-    }
+        },
+        {
+            id: 'second',
+            title: 'Les produits utilisés',
+            text: 'Oui et toi',
+
+        },
+        {
+            id: 'third',
+            title: 'Déplacement',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima consequatur tempora non nisi numquam voluptatibus ipsam animi vitae autem.',
+
+        },
+        {
+            id: 'fourth',
+            title: 'Nature',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima consequatur tempora non nisi numquam voluptatibus ipsam animi vitae autem.',
+
+        },
+        {
+            id: 'fifth',
+            title: 'Sanitaire',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima consequatur tempora non nisi numquam voluptatibus ipsam animi vitae autem.',
+
+        },
+    ]
+
+    const [previous, setPrevious] = useState(null);
+
+    // const [isActive, setIsActive] = useState({
+    //     first: false,
+    //     second: false,
+    //     third: false,
+    //     fourth: false,
+    //     fifth: false
+    // });
+
+    const [isActive, setIsActive] = useState(
+        contentList.reduce((acc, el) => {
+            acc[el] = false;
+            return acc;
+        }, {}));
+
+
+    const handleClick = ({ target }) => {
+        const { id } = target;
+        setIsActive({ ...isActive, [id]: true, [previous]: false });
+        setPrevious(id);
+    };
+
+    // const sliderArray = idList.map((el, i) => {
+    //     return {
+    //         id: el,
+    //         title: contentList[i].title,
+    //         text: contentList[i].text,
+    //     }
+    // });
+    // console.log(sliderArray);
+
+
 
     return (
-        <>
-            <div className="containerAbout">
-
-                <div onClick={handleClickFirst}  className={ isActiveFirst === true ? ' panel active' : 'panel '}  id='first'>
-                    <h3>CSS Script</h3>
-                </div>
-                <div onClick={handleClickSecond} className={ isActiveSecond === true ? ' panel active' : 'panel '} id='second'>
-                    <h3>CSS Script</h3>
-                </div>
-                <div onClick={handleClickThird} className={ isActiveThird === true ? ' panel active' : 'panel '} id='third'>
-                    <h3>CSS Script</h3>
-                </div>
-                <div onClick={handleClickFourth} className={ isActiveFourth === true ? ' panel active' : 'panel '} id='fourth' >
-                    <h3>CSS Script</h3>
-                </div>
-                <div onClick={handleClickFifth} className={ isActiveFifth === true ? ' panel active' : 'panel '} id='fifth' >
-                    <h3>CSS Script</h3>
-                </div>
-            </div>
-
-        </>
-    )
+        <div className="containerAbout">
+            {contentList.map((currentId, idx) => (
+                <SliderChild key={idx} id={currentId.id} data={{ isActive, handleClick, currentId }} />
+            ))}
+        </div>
+    );
 }
 
-export default SliderAbout
+export default SliderAbout;
