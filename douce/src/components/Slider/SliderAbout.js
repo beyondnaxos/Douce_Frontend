@@ -73,6 +73,7 @@ function SliderAbout() {
 
     return (
         <div className="containerAbout">
+
             {contentList.map((currentId, idx) => (
                 <SliderChild key={idx} id={currentId.id} data={{ isActive, handleClick, currentId }} />
             ))}

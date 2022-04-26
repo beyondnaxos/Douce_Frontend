@@ -14,7 +14,7 @@ const SliderChild = ({ data, props }) => {
       key={currentId.id}
       id={currentId.id}>
       <h3>{currentId.title}</h3>
-      {/* <p>{currentId.text}</p> */}
+      <p className='hello'>{currentId.text}</p>
     </div>
   );
 };
