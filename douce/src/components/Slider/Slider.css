@@ -21,7 +21,7 @@
 }
 
 .panel h3 {
-  font-size: 24px;
+  font-size: 35px;
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -31,15 +31,16 @@
 
 }
 
-p {
-  font-size: 24px;
+.panel p {
+  font-size: 30px;
   position: absolute;
   top: 20px;
   left: 20px;
   margin: 0;
   opacity: 0;
   pointer-events: none;
-  width: 300px;
+  width: 900px;
+  font-weight: bold;
 
 }
 
@@ -50,29 +51,37 @@ p {
 .panel.active h3, .panel.active p {
   opacity: 1;
   transition: opacity .5s ease-in .4s;
+  
 }
 
 #first {
-  background-color: #ac92eb;
+  /* background-color: #ac92eb; */
   /* background-color: rgb(132, 255, 249); */
+  background-image: url( './makeup.jpg');
+  backdrop-filter: blur(5px);
+
 }
 
 #second {
   background-color: #4fc1e8;
+  background-image: url( './makeup.jpg');
   /* background-color: rgb(152, 255, 249); */
 }
 
 #third {
   background-color: #a0d568;
+  background-image: url( './makeup.jpg');
   /* background-color: rgb(172, 255, 249); */
 }
 
 #fourth {
   background-color: #ffce54;
+  background-image: url( './makeup.jpg');
   /* background-color: rgb(192, 255, 249); */
 }
 
 #fifth {
+  background-image: url( './makeup.jpg');
   background-color: #ed5564;
   /* background-color: rgb(212, 255, 249); */
 }
@@ -84,8 +93,8 @@ p {
     width: 100vw;
   }
 
-  .panel:nth-last-of-type(6),
-  .panel:nth-last-of-type(7) {
+  .panel:nth-last-of-type(4),
+  .panel:nth-last-of-type(5) {
     display: none;
   }
 }
