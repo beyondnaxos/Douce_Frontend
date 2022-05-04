@@ -11,15 +11,15 @@ import Contact from './pages/contact';
 // import SignIn from './pages/signin';
 import Tarifs from './pages/tarifs';
 import { AnimatePresence } from 'framer-motion'
-import {useAuthState} from 'react-firebase-hooks/auth'
-import { auth } from './firebase';
+// import {useAuthState} from 'react-firebase-hooks/auth'
+// import { auth } from './firebase';
 
 
 
 
 function App() {
 
-  const [user] = useAuthState(auth)
+  // const [user] = useAuthState(auth)
 
   return (
 
@@ -35,8 +35,6 @@ function App() {
           <Route path="/about" element={< About />} />
           <Route path="/tarifs" element={<Tarifs />} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/signin" element={<SignIn />} /> */}
-          {/* <Route path="/signup" element={<SignUp />} /> */}
           
         </Routes>
 

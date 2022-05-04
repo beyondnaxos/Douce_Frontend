@@ -3,7 +3,6 @@ import './Slider.css';
 import SliderChild from './SliderChild';
 function SliderAbout() {
 
-    // const idList = ['first', 'second', 'third', 'fourth', 'fifth'];
     const contentList = [
         {
             id: 'first',
@@ -13,39 +12,31 @@ function SliderAbout() {
         },
         {
             id: 'second',
-            title: 'Les produits utilisés',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima consequatur tempora non nisi numquam voluptatibus ipsam animi vitae autem.',
+            title: 'Mes Engagements',
+            text: ' Je travaille uniquement avec des produits de grande qualité et autant que possible avec des produits Bios, Vegans, et respectueux de l\'environnement. ',
 
         },
         {
             id: 'third',
-            title: 'Déplacement',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima consequatur tempora non nisi numquam voluptatibus ipsam animi vitae autem.',
+            title: 'Vente de cosmétiques',
+            text: 'Afin que vous puissiez prolonger le plaisir après les rendez vous, je vend un large choix de produits 100% Bios et Vegans. Crèmes, masques, lotions, etc...  Des textures fondantes et des odeurs gourmandes sont à votre disposition.',
 
         },
         {
             id: 'fourth',
-            title: 'Nature',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima consequatur tempora non nisi numquam voluptatibus ipsam animi vitae autem.',
+            title: 'Déplacements',
+            text: 'Aucun frais pour des Déplacement jusqu\'à 25Km autour de Colmen à partir de 30€ de commande, au delà de 25Km pour un minimum de 50€ de commande les frais sont calculés en fonction de la zone.',
 
         },
         {
             id: 'fifth',
-            title: 'Sanitaire',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima consequatur tempora non nisi numquam voluptatibus ipsam animi vitae autem.',
+            title: 'Mesures sanitaires',
+            text: ' Tout est fait afin de garantir votre sécurité ! L\'intégralité du materiel est désinfécté et le port du masque indispensable. Protegeons nous ! ', 
 
         },
     ]
 
     const [previous, setPrevious] = useState(null);
-
-    // const [isActive, setIsActive] = useState({
-    //     first: false,
-    //     second: false,
-    //     third: false,
-    //     fourth: false,
-    //     fifth: false
-    // });
 
     const [isActive, setIsActive] = useState(
         contentList.reduce((acc, el) => {
@@ -56,18 +47,10 @@ function SliderAbout() {
 
     const handleClick = ({ target }) => {
         const { id } = target;
-        setIsActive({ ...isActive, [id]: true, [previous]: false });
+        setIsActive({ ...isActive, [id]: true, [previous]: false  });
         setPrevious(id);
     };
 
-    // const sliderArray = idList.map((el, i) => {
-    //     return {
-    //         id: el,
-    //         title: contentList[i].title,
-    //         text: contentList[i].text,
-    //     }
-    // });
-    // console.log(sliderArray);
 
 
 

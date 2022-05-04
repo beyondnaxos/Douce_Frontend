@@ -2,7 +2,6 @@
   display: flex;
   width: 90vw;
   z-index: 220000;
-
 }
 
 .panel {
@@ -11,13 +10,18 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 500px;
-  border-radius: 5px;
+  border-radius: 15px;
   color: rgb(255, 255, 255);
-  
+  box-sizing: border-box;
   cursor: pointer;
   flex: .5;
   margin: 10px;
   transition: all 700ms ease-in-out;
+  border: 5px rgb(255, 255, 255) !important;
+  border-style: dashed !important;
+  box-shadow:
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -4px -4px 10px 0 rgba(243, 95, 243, 0.3);
 }
 
 .panel h3 {
@@ -39,54 +43,115 @@
   margin: 0;
   opacity: 0;
   pointer-events: none;
-  width: 900px;
+  width: 90%;
   font-weight: bold;
 
 }
 
 .panel.active {
   flex: 5;
+  /* background: linear-gradient(236deg, #2b2b2b, #df92ce, #272727);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 24s ease infinite;
+  -moz-animation: AnimationName 24s ease infinite;
+  animation: AnimationName 24s ease infinite; */
+  background-color: black;
+}
+
+.false, .undefined {
+  /* background-color: #fff !important; */
+  /* background : linear-gradient(to bottom, rgb(224, 85, 143),rgb(241, 137, 181), rgb(235, 114, 208)) !important; */
+  /* background: linear-gradient(236deg, #f5437e, #f7b6e9, #f147b0);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 24s ease infinite;
+  -moz-animation: AnimationName 24s ease infinite;
+  animation: AnimationName 24s ease infinite; */
+  background-color: rgb(46, 45, 45);
+  /* inner border */
 }
 
 .panel.active h3, .panel.active p {
   opacity: 1;
-  transition: opacity .5s ease-in .4s;
-  
+  transition: opacity .50s ease-in .5s;
+
 }
 
 #first {
   /* background-color: #ac92eb; */
-  /* background-color: rgb(132, 255, 249); */
-  background-image: url( './makeup.jpg');
+  /* background-color: rgb(22, 22, 22); */
+  /* background-image: url( './makeup.jpg'); */
   backdrop-filter: blur(5px);
 
 }
 
 #second {
-  background-color: #4fc1e8;
-  background-image: url( './makeup.jpg');
+  /* background-color: #141414; */
+  /* background-image: url( './makeup.jpg'); */
   /* background-color: rgb(152, 255, 249); */
 }
 
 #third {
-  background-color: #a0d568;
-  background-image: url( './makeup.jpg');
+  /* background-color: #1b1b1b; */
+  /* background-image: url( './makeup.jpg'); */
   /* background-color: rgb(172, 255, 249); */
 }
 
 #fourth {
-  background-color: #ffce54;
-  background-image: url( './makeup.jpg');
+  /* background-color: #1b1b1b; */
+  /* background-image: url( './makeup.jpg'); */
   /* background-color: rgb(192, 255, 249); */
 }
 
 #fifth {
-  background-image: url( './makeup.jpg');
-  background-color: #ed5564;
+  /* background-image: url( './makeup.jpg'); */
+  /* background-color: #1f1f1f; */
   /* background-color: rgb(212, 255, 249); */
 }
 
 
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 88%
+  }
+
+  50% {
+    background-position: 100% 13%
+  }
+
+  100% {
+    background-position: 0% 88%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 88%
+  }
+
+  50% {
+    background-position: 100% 13%
+  }
+
+  100% {
+    background-position: 0% 88%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 88%
+  }
+
+  50% {
+    background-position: 100% 13%
+  }
+
+  100% {
+    background-position: 0% 88%
+  }
+}
 
 @media(max-width:480px) {
   .container {

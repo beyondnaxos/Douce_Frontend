@@ -1,14 +1,14 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import {useAuthState} from 'react-firebase-hooks/auth'
-import { auth } from '../firebase'
-import Chat from '../components/Chat';
-import SignIn from '../components/SignIn';
+// import {useAuthState} from 'react-firebase-hooks/auth'
+// import { auth } from '../firebase'
+// import Chat from '../components/Chat';
+// import SignIn from '../components/SignIn';
 import '../styles/contact.css'
 
 function Contact() {
 
-    const [user] = useAuthState(auth)
+    // const [user] = useAuthState(auth)
     return (    
         
         <motion.div
@@ -18,7 +18,7 @@ function Contact() {
         exit={{ opacity: 0 }}
         className='cards big-container'>
            
-         {user ? <Chat /> :<SignIn />}
+         {/* {user ? <Chat /> :<SignIn />} */}
            
         <div className='contact-container'>
             <div className='contact-header'>
