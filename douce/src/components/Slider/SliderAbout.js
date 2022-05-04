@@ -8,7 +8,7 @@ function SliderAbout() {
             id: 'first',
             title: 'A propos de moi',
             text: 'Je m\'appelle Julie, esthéticienne depuis 8 ans, passionnée par mon métier, j\'ai créé l\'institut de beauté féminin à domicile Douce afin de vous faire vivre une experience agréable et de vrais moments de bien-être',
-
+            
         },
         {
             id: 'second',

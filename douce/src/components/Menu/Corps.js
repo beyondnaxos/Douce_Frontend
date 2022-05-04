@@ -10,6 +10,7 @@ import { styled } from '@mui/material/styles';
 
 
 import mainspiedspieds from './mainpiedspieds.svg'
+
 function Corps() {
 
     const [isFlippedFirst, setIsFlippedFirst] = useState(false);
@@ -42,38 +43,91 @@ function Corps() {
     }
 
 
-    useEffect(() => {
-        axios.get('http://localhost:8080/api/menu/epilation')
-            .then(res => {
-                setEpilation(res.data)
-            }
+    useEffect( () => {
+
+        const fetchEpilation = async () => {
+            const result = await axios(
+                'http://localhost:8080/api/menu/epilation'
             )
-        axios.get('http://localhost:8080/api/menu/mgs')
-            .then(res => {
-                setCorps(res.data)
-            }
+            setEpilation(result.data)
+        }
+        fetchEpilation()
+
+        const fetchCorps = async () => {
+            const result = await axios(
+                'http://localhost:8080/api/menu/mgs'
             )
-        axios.get('http://localhost:8080/api/menu/visage')
-            .then(res => {
-                setVisage(res.data)
-            }
+            setCorps(result.data)
+        }
+        fetchCorps()
+
+        const fetchVisage = async () => {
+            const result = await axios(
+                'http://localhost:8080/api/menu/visage'
             )
-        axios.get('http://localhost:8080/api/menu/mains')
-            .then(res => {
-                setMains(res.data)
-            }
+            setVisage(result.data)
+        }
+        fetchVisage()
+
+        const fetchMains = async () => {
+            const result = await axios(
+                'http://localhost:8080/api/menu/mains'
             )
-        axios.get('http://localhost:8080/api/menu/pieds')
-            .then(res => {
-                setPieds(res.data)
-            }
+            setMains(result.data)
+        }
+        fetchMains()
+
+        const fetchPieds = async () => {
+            const result = await axios(
+                'http://localhost:8080/api/menu/pieds'
             )
-        axios.get('http://localhost:8080/api/menu/makeup')
-            .then(res => {
-                setMakeup(res.data)
-            }
+            setPieds(result.data)
+        }
+        fetchPieds()
+
+        const fetchMakeup = async () => {
+            const result = await axios(
+                'http://localhost:8080/api/menu/makeup'
             )
+            setMakeup(result.data)
+        }
+        fetchMakeup()
+
     }, [])
+        
+
+
+    //      axios.get('http://localhost:8080/api/menu/epilation')
+    //         .then(res => {
+    //             setEpilation(res.data)
+    //         }
+    //         )
+    //     axios.get('http://localhost:8080/api/menu/mgs')
+    //         .then(res => {
+    //             setCorps(res.data)
+    //         }
+    //         )
+    //     axios.get('http://localhost:8080/api/menu/visage')
+    //         .then(res => {
+    //             setVisage(res.data)
+    //         }
+    //         )
+    //     axios.get('http://localhost:8080/api/menu/mains')
+    //         .then(res => {
+    //             setMains(res.data)
+    //         }
+    //         )
+    //     axios.get('http://localhost:8080/api/menu/pieds')
+    //         .then(res => {
+    //             setPieds(res.data)
+    //         }
+    //         )
+    //     axios.get('http://localhost:8080/api/menu/makeup')
+    //         .then(res => {
+    //             setMakeup(res.data)
+    //         }
+    //         )
+    // }, [])
 
     //set tooltip background to black and text to white
     const BootstrapTooltip = styled(({ className, ...props }) => (

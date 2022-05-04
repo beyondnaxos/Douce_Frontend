@@ -1,8 +1,15 @@
-const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
+import NodePolyfillPlugin from "node-polyfill-webpack-plugin"
+
+const path = require('path')
 
 module.exports = {
-    // Other rules...
-    plugins: [
-        new NodePolyfillPlugin()
-    ]
+  entry: path.resolve(__dirname, 'src', 'index.js'),
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  }
 }
+
+export const plugins = [
+    new NodePolyfillPlugin()
+]

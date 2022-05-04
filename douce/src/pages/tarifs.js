@@ -4,15 +4,16 @@ import { motion } from "framer-motion";
 
 function Contact() {
     return (    
-        < >
-        <motion.div
+        <>
+        {/* <motion.div
         
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        >
+        > */}
         <Corps />
-        </motion.div>
+        {/* </motion.div> */}
+
         </>
     );
 };
