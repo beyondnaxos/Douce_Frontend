@@ -1,11 +1,8 @@
 import React from 'react';
 
-const SliderChild = ({ data, props }) => {
+const SliderChild = ({ data }) => {
 
   const { isActive, handleClick, currentId } = data;
-  
-  
-console.log(isActive[currentId.id]);
 
   return (
     <div
@@ -13,12 +10,8 @@ console.log(isActive[currentId.id]);
       className={`panel ${isActive[currentId.id] && 'active'} `}
       key={currentId.id}
       id={currentId.id}>
-      
-
-        <h3>{currentId.title}</h3>
-    
+      <h3>{currentId.title}</h3>
       <p className='hello'>{currentId.text}
-      
       </p>
     </div>
   );

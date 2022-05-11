@@ -42,7 +42,6 @@
   pointer-events: none;
   transform: rotate(90deg);
   color: rgb(255, 255, 255) !important;
-
 }
 
 .active {
@@ -58,11 +57,22 @@
 
 }
 
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  to {
+    opacity: 0;
+  }
+}
 
 .active p {
   display: inline;
-  opacity: 1;
-  transition: opacity .50s ease-in .5s;
+  opacity: 0;
+  animation: fadein .50s ease-in .5s forwards;
   position: relative;
   margin-left: 42%;
   width: 370px;
@@ -76,8 +86,12 @@
 }
 
 .active h3 {
+  animation: fadeout .250s ease-in .250s forwards;
+}
+
+.false h3 {
   opacity: 0;
-  transition: opacity .250s ease-in .250s;
+  animation: fadein .250s ease-in .250s forwards;
 }
 
 

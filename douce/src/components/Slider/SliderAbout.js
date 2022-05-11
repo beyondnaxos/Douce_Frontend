@@ -8,7 +8,7 @@ function SliderAbout() {
             id: 'first',
             title: 'PRESENTATION',
             text: 'Je m\'appelle Julie, esthéticienne depuis 8 ans, passionnée par mon métier, j\'ai créé l\'institut de beauté féminin à domicile Douce afin de vous faire vivre une experience agréable et de vrais moments de bien-être',
-            
+
         },
         {
             id: 'second',
@@ -28,29 +28,29 @@ function SliderAbout() {
             text: 'Aucun frais pour des Déplacement jusqu\'à 25Km autour de Colmen à partir de 30€ de commande, au delà de 25Km pour un minimum de 50€ de commande les frais sont calculés en fonction de la zone.',
 
         },
-      
-    ]
 
-    const [previous, setPrevious] = useState(null);
+    ];
+
+    const [previous, setPrevious] = useState('inactive');
 
     const [isActive, setIsActive] = useState(
         contentList.reduce((acc, el) => {
-            acc[el] = false;
+            acc[el.id] = false;
             return acc;
         }, {}));
 
 
     const handleClick = ({ target }) => {
         const { id } = target;
-        setIsActive({ ...isActive, [id]: true, [previous]: false  });
-        setPrevious(id);
+        setIsActive({ ...isActive, [id]: true, [previous]: false });
+        setPrevious(previous === id ? 'inactive' : id);
     };
 
     return (
         <div className="containerAbout">
 
             {contentList.map((currentId, idx) => (
-                <SliderChild key={idx} id={currentId.id} data={{ isActive, handleClick, currentId }} />
+                <SliderChild key={idx} data={{ isActive, handleClick, currentId }} />
             ))}
         </div>
     );
