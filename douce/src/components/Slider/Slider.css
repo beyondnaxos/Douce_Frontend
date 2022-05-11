@@ -1,17 +1,18 @@
 .containerAbout {
   display: flex;
-  width: 90vw;
+  width: 100vw;
   z-index: 220000;
+  height: 500px;
+  column-gap: 40px;
+  margin-top: 50px;
+  align-items: center;
 }
 
-.hello {
-  height: 500px;
-}
 
 .panel {
   position: relative;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   height: 500px;
   border-radius: 15px;
@@ -19,7 +20,9 @@
   box-sizing: border-box;
   cursor: pointer;
   flex: .5;
-  margin: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
   transition: all 700ms ease-in-out;
   border: 5px rgb(255, 255, 255) !important;
   border-style: dashed !important;
@@ -31,53 +34,72 @@
 .panel h3 {
   font-size: 35px;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  top: 40%;
+  width: 100%;
+  left: -60px;
   margin: 0;
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
+  transform: rotate(90deg);
+  color: rgb(255, 255, 255) !important;
 
 }
 
-.panel p {
-  font-size: 30px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  margin: 0;
+.active {
+  flex: 2;
+}
+
+.false p {
+  display: none;
   opacity: 0;
+  transition: opacity .50s ease-in .5s;
   pointer-events: none;
-  width: 90%;
+
+
+}
+
+
+.active p {
+  display: inline;
+  opacity: 1;
+  transition: opacity .50s ease-in .5s;
+  position: relative;
+  margin-left: 42%;
+  width: 370px;
+  height: 300px;
+  overflow: hidden;
+  font-size: 25px;
+  pointer-events: none;
+  /* width: 40%; */
   font-weight: bold;
 
 }
 
-.panel.active {
-  flex: 5;
-
-  background-color: black;
+.active h3 {
+  opacity: 0;
+  transition: opacity .250s ease-in .250s;
 }
 
 
-
-.false, .undefined {
-background-color: rgb(80, 80, 80);
-  /* background-image: url("https://i.ibb.co/ZxXxLqz/bg-1.png"); */
-
+#first {
+  background-image: url("imgbrown.png");
 }
 
-/* .false::after, .undefined::after {
-  content: "some text";
-  color: blue;
+#second {
+  background-image: url("imgpink.png");
+}
+
+#third {
+  background-image: url("imgyell.png");
+}
+
+#fourth {
+  background-image: url("imggreentwk.png");
+}
+
+/* #first {
+  background-image: url("imgbrown.png");
 } */
-
-.panel.active h3, .panel.active p {
-  opacity: 1;
-  transition: opacity .50s ease-in .5s;
-
-}
-
-
 
 
 @media(max-width:480px) {
@@ -85,8 +107,8 @@ background-color: rgb(80, 80, 80);
     width: 100vw;
   }
 
-  .panel:nth-last-of-type(4),
-  .panel:nth-last-of-type(5) {
+  .panel:nth-last-of-type(3),
+  .panel:nth-last-of-type(4) {
     display: none;
   }
 }

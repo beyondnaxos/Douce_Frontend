@@ -24,8 +24,8 @@ function App() {
   return (
 
     <Router>
-      <div className='main'>
         <Background />
+      <div className='main'>
         <Navbar />
       </div>
       <AnimatePresence >

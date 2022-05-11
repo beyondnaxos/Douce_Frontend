@@ -1,13 +1,13 @@
 
 
 .big-card-container {
-    display: flex;
-    flex-direction: row;
-    height: 500px;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: row !important;
+    height: 500px !important;
+    justify-content: center !important;
+    column-gap: 10px !important;
+    width: 100% !important;
     
-    column-gap: 10px;
-    width: 100%;
     
 }
 .card-body {
