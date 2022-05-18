@@ -19,7 +19,7 @@ function SliderAbout() {
         {
             id: 'third',
             title: 'SHOPPING',
-            text: 'Afin que vous puissiez prolonger le plaisir après les rendez vous, je vend un large choix de produits 100% Bios et Vegans. Crèmes, masques, lotions, etc...  Des textures fondantes et des odeurs gourmandes sont à votre disposition.',
+            text: 'Je vend un large choix de produits 100% Bios et Vegans. Crèmes, masques, lotions, etc...  Des textures fondantes et des odeurs gourmandes sont à votre disposition.',
 
         },
         {

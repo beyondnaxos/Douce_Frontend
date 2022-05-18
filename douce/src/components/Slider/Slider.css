@@ -42,6 +42,8 @@
   pointer-events: none;
   transform: rotate(90deg);
   color: rgb(255, 255, 255) !important;
+  text-shadow: 2px 2px 4px rgb(54, 54, 54); 
+
 }
 
 .active {
@@ -81,7 +83,12 @@
   font-size: 25px;
   pointer-events: none;
   /* width: 40%; */
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: rgba(255, 251, 253, 0.85);
+  font-family: 'Righteous' !important;
+ text-shadow: 2px 2px 4px rgb(54, 54, 54); 
+ padding-top: 80px;
+  vertical-align: middle;
 
 }
 
