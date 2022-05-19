@@ -1,6 +1,8 @@
 import React from 'react'
 import './HomeXXL.css'
 import { motion } from 'framer-motion'
+import Typewriter from 'typewriter-effect';
+
 
 
 export default function HomeXXL() {
@@ -18,7 +20,19 @@ export default function HomeXXL() {
                     </svg>
                     
                 </div>
-
+                < div className='cards3'>
+        <div className='homeText'>
+          <h1 className='homeTextMainMessage'> douce</h1>
+          <h2 className='homeTextMessage'><Typewriter
+            options={{
+              strings: ['bien-être', 'épilations', 'encore + douce'],
+              // strings: ['vous souhaites la bienvenue !', 'prendra soin de votre peau', 'vous fera passer un agréable moment !'],
+              autoStart: true,
+              loop: true,
+            }}
+          /></h2>
+        </div>
+      </div>
 
             </div>
         </motion.div>

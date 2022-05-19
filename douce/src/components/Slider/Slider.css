@@ -1,10 +1,10 @@
 .containerAbout {
   display: flex;
-  width: 100vw;
+  width: 100%;
   z-index: 220000;
-  height: 500px;
+  min-height: 500px;
   column-gap: 40px;
-  margin-top: 50px;
+  /* margin-top: 155px; */
   align-items: center;
 }
 

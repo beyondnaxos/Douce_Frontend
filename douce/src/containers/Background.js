@@ -15,7 +15,7 @@ const Background = () => {
                   <div className="ring4">
                     <div className="ring3">
                       <div className="ring2">
-
+                        
                       </div>
                     </div>
                   </div>

@@ -1,31 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  // overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(236, 240, 245);
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+  -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+  user-select: none; /* Propriété standard */
+}
+
 .App {
   text-align: center;
+
 }
 
 
 .main {
-  width: 100%;
+  width: 30%;
   height: 100%;
   display: flex;
   position: absolute;
-  top: 50px;
-  left: 0;
+  flex-direction: column;
+  align-items:  center;
+  top: 100px;
+  @media screen and (max-width: 768px) {
+   top: 50px;
+   width: 80%;
+}
 }
 
 
 #navMain {
   border-radius: 30px;
-  width: 100%;
+  width: 100%; 
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* width: 60%; */
-  /* width: 48vw ; */
   margin-right: 14px;
 }
+// #navMain a {
+// margin-top: 10px;
+// }
 
 
 
@@ -106,18 +134,46 @@
 }
 
 
-.cards, .cards2 {
+.cards {
   margin-left: 12%;
   margin-right: 12%;
   position: absolute;
   width: 76%;
-  height: 98%;
+  height: 100%;
   top: 0;
   left: 0;
-
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.cards2 {
+  margin-left: 12%;
+  margin-right: 12%;
+  position: absolute;
+  width: 76%;
+  height: 100%;
+  top: 50px;
+  left: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards3 {
+  margin-left: 12%;
+  margin-right: 12%;
+  position: absolute;
+  width: 76%;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -233,3 +289,4 @@
     transform: scale(1) translate(0, -0);
   }
 }
+

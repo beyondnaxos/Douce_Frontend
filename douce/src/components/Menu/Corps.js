@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import './tarif.css'
+import './tarif.scss'
 import ReactCardFlip from 'react-card-flip';
 import spatule from './spatule.svg'
 import body from './soinscorps.svg'
@@ -155,7 +155,7 @@ function Corps() {
 
     return (
         < >
-            <div className="cards tarif-container-center">
+            <div className="tarif-container-center">
                 <ReactCardFlip isFlipped={isFlippedFirst} flipDirection="horizontal">
                     <div onClick={handleClickFirst} className='front-card'>
                         <div className="card-body">
