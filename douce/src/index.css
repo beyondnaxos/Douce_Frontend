@@ -1,21 +1,4 @@
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', 'Roboto' ;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  background: #FFB1A4;
-  
-  display: flex;
-  align-items: center;
-}
-
-
 #root {
   align-items: center;
 }

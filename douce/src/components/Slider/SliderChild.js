@@ -7,7 +7,7 @@ const SliderChild = ({ data }) => {
   return (
     <div
       onClick={handleClick}
-      className={`panel ${isActive[currentId.id] && 'active'} `}
+      className={`panel ${isActive[currentId.id] && 'isActive'} `}
       key={currentId.id}
       id={currentId.id}>
       <h3>{currentId.title}</h3>

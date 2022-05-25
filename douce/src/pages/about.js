@@ -13,7 +13,7 @@ const About = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         >
-        <div className="cards">
+        <div className="cards-about">
          
             <SliderAbout />
         </div>

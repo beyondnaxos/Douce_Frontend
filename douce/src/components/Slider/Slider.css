@@ -6,6 +6,7 @@
   column-gap: 40px;
   /* margin-top: 155px; */
   align-items: center;
+
 }
 
 
@@ -42,11 +43,11 @@
   pointer-events: none;
   transform: rotate(90deg);
   color: rgb(255, 255, 255) !important;
-  text-shadow: 2px 2px 4px rgb(54, 54, 54); 
+  text-shadow: 2px 2px 4px rgb(54, 54, 54);
 
 }
 
-.active {
+.isActive {
   flex: 2;
 }
 
@@ -71,7 +72,7 @@
   }
 }
 
-.active p {
+.isActive p {
   display: inline;
   opacity: 0;
   animation: fadein .50s ease-in .5s forwards;
@@ -86,13 +87,13 @@
   /* font-weight: bold; */
   color: rgba(255, 251, 253, 0.85);
   font-family: 'Righteous' !important;
- text-shadow: 2px 2px 4px rgb(54, 54, 54); 
- padding-top: 80px;
+  text-shadow: 2px 2px 4px rgb(54, 54, 54);
+  padding-top: 80px;
   vertical-align: middle;
 
 }
 
-.active h3 {
+.isActive h3 {
   animation: fadeout .250s ease-in .250s forwards;
 }
 
@@ -100,7 +101,6 @@
   opacity: 0;
   animation: fadein .250s ease-in .250s forwards;
 }
-
 
 #first {
   background-image: url("imgbrown.png");
@@ -122,8 +122,62 @@
   background-image: url("imgbrown.png");
 } */
 
+@media screen and (max-width: 768px) {
+ 
+  .containerAbout {
+    flex-direction: column;
+    height: 75%;
+    margin-top: 120px;
+    /* background-color: #fff; */
+    flex-wrap: nowrap;
+    row-gap: 20px;
+  }
 
-@media(max-width:480px) {
+  .panel {
+
+    height: 25%;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    cursor: pointer;
+    flex: 0.5;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .isActive {
+    flex: 2;
+
+  }
+
+  .panel h3 {
+    font-size: 25px;
+    top: 30%;
+    width: 100%;
+    left: 40px;
+    transform: rotate(0);
+  }
+
+  .isActive p {
+
+    margin-left: 2%;
+    width: 85%;
+    height: 300px;
+    overflow: hidden;
+    font-size: 18px;
+    text-shadow: none;
+    color: rgb(36, 36, 36);
+    text-shadow: 4px 4px 10px rgb(255, 255, 255);
+    padding-top: 40px;
+    vertical-align: middle;
+
+  }
+
+
+}
+
+/* @media(max-width:480px) {
   .container {
     width: 100vw;
   }
@@ -132,4 +186,4 @@
   .panel:nth-last-of-type(4) {
     display: none;
   }
-}
+} */

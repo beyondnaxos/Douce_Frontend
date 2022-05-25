@@ -8,6 +8,10 @@
 
 body {
   margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', 'Roboto' ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   padding: 0;
   // overflow: hidden;
   display: flex;
@@ -20,6 +24,12 @@ body {
   -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
   -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
   user-select: none; /* Propriété standard */
+
+  @media screen and (max-width: 768px) {
+    overflow: scroll;
+  
+    
+  }
 }
 
 .App {
@@ -37,8 +47,8 @@ body {
   align-items:  center;
   top: 100px;
   @media screen and (max-width: 768px) {
-   top: 50px;
-   width: 80%;
+   top: 20px;
+   width: 100%;
 }
 }
 
@@ -50,6 +60,9 @@ body {
   flex-direction: row;
   justify-content: center;
   margin-right: 14px;
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+  }
 }
 // #navMain a {
 // margin-top: 10px;
@@ -146,6 +159,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+}
+.cards-about {
+  margin-left: 12%;
+  margin-right: 12%;
+  position: absolute;
+  width: 76%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+@media screen and (max-width: 768px) {
+  margin-left: 10%;
+  margin-right:10%;
+  width: 80%;
+  
+}
 }
 
 .cards2 {
