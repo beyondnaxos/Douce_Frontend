@@ -97,39 +97,6 @@ function Corps() {
         
 
 
-    //      axios.get('http://localhost:8080/api/menu/epilation')
-    //         .then(res => {
-    //             setEpilation(res.data)
-    //         }
-    //         )
-    //     axios.get('http://localhost:8080/api/menu/mgs')
-    //         .then(res => {
-    //             setCorps(res.data)
-    //         }
-    //         )
-    //     axios.get('http://localhost:8080/api/menu/visage')
-    //         .then(res => {
-    //             setVisage(res.data)
-    //         }
-    //         )
-    //     axios.get('http://localhost:8080/api/menu/mains')
-    //         .then(res => {
-    //             setMains(res.data)
-    //         }
-    //         )
-    //     axios.get('http://localhost:8080/api/menu/pieds')
-    //         .then(res => {
-    //             setPieds(res.data)
-    //         }
-    //         )
-    //     axios.get('http://localhost:8080/api/menu/makeup')
-    //         .then(res => {
-    //             setMakeup(res.data)
-    //         }
-    //         )
-    // }, [])
-
-    //set tooltip background to black and text to white
     const BootstrapTooltip = styled(({ className, ...props }) => (
         <Tooltip {...props} arrow classes={{ popper: className }} />
     ))(({ theme }) => ({
@@ -174,7 +141,7 @@ function Corps() {
 
                                     <div className='front-card-text-container'>
                                         <div className='front-card-title'>
-                                            <h1>Epilation</h1>
+                                            <h1>Epilations</h1>
                                         </div>
                                         <div className='front-card-image'>
                                             <div className='card-image-container'>

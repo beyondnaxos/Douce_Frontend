@@ -11,7 +11,7 @@ export const Nav = styled.nav`
     align-items: center;
     padding: 0.2rem calc((100vw - 1000px) / 2);
     z-index: 12;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1500px) {
       flex-direction: column;
   
       justify-content: center;
@@ -24,7 +24,7 @@ export const NavLogo = styled(Link)`
   color: #fff;
   text-decoration: none;
   margin-right: 4rem;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1500px) {
     margin-right: 1px;
    display: flex;
     justify-content: center;
@@ -54,7 +54,7 @@ transition: all 0.25s ease-in-out;
 &:hover {
   color: white;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1500px) {
 font-size: 1.2rem;
 mrgin-right: 0;
 padding: 0;
@@ -69,7 +69,7 @@ text-align: center;
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1500px) {
     display: block;
     position: absolute;
     top: 10px;
@@ -85,7 +85,7 @@ export const NavMenu = styled.div`
   align-items: center;
   
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1500px) {
     justify-content: space-between;
    width: 350px;
   //  margin-top : 1rem;
@@ -97,7 +97,7 @@ export const NavBtn = styled.nav`
   align-items: center;
   margin-right: 24px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1500px) {
     // display: none;
   }
 `;

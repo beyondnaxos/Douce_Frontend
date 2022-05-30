@@ -25,7 +25,9 @@ body {
   -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
   user-select: none; /* Propriété standard */
 
-  @media screen and (max-width: 768px) {
+
+
+  @media screen and (max-width: 1500px) {
     overflow: scroll;
   
     
@@ -46,9 +48,9 @@ body {
   flex-direction: column;
   align-items:  center;
   top: 100px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1500px) {
    top: 20px;
-   width: 100%;
+  //  width: 100%;
 }
 }
 
@@ -60,7 +62,7 @@ body {
   flex-direction: row;
   justify-content: center;
   margin-right: 14px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1500px) {
     margin-right: 0;
   }
 }
@@ -173,7 +175,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1500px) {
   margin-left: 10%;
   margin-right:10%;
   width: 80%;
