@@ -11,7 +11,7 @@ const SliderChild = ({ data }) => {
       key={currentId.id}
       id={currentId.id}>
       <h3>{currentId.title}</h3>
-      <p className='hello'>{currentId.text}
+      <p className='hello'>{currentId.text.toUpperCase()}
       </p>
     </div>
   );
