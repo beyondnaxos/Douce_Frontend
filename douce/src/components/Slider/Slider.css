@@ -131,7 +131,7 @@
   .containerAbout {
     flex-direction: column;
     height: 75%;
-    margin-top: 120px;
+    margin-top: 150px;
     /* background-color: #fff; */
     flex-wrap: nowrap;
     row-gap: 20px;

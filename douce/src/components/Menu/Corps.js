@@ -47,7 +47,7 @@ function Corps() {
 
         const fetchEpilation = async () => {
             const result = await axios(
-                'http://localhost:8080/api/menu/epilation'
+                'https://light-sunlight-353509.ew.r.appspot.com/api/menu/epilation'
             )
             setEpilation(result.data)
         }
@@ -55,7 +55,7 @@ function Corps() {
 
         const fetchCorps = async () => {
             const result = await axios(
-                'http://localhost:8080/api/menu/mgs'
+                'https://light-sunlight-353509.ew.r.appspot.com/api/menu/mgs'
             )
             setCorps(result.data)
         }
@@ -63,7 +63,7 @@ function Corps() {
 
         const fetchVisage = async () => {
             const result = await axios(
-                'http://localhost:8080/api/menu/visage'
+                'https://light-sunlight-353509.ew.r.appspot.com/api/menu/visage'
             )
             setVisage(result.data)
         }
@@ -71,7 +71,7 @@ function Corps() {
 
         const fetchMains = async () => {
             const result = await axios(
-                'http://localhost:8080/api/menu/mains'
+                'https://light-sunlight-353509.ew.r.appspot.com/api/menu/mains'
             )
             setMains(result.data)
         }
@@ -79,7 +79,7 @@ function Corps() {
 
         const fetchPieds = async () => {
             const result = await axios(
-                'http://localhost:8080/api/menu/pieds'
+                'https://light-sunlight-353509.ew.r.appspot.com/api/menu/pieds'
             )
             setPieds(result.data)
         }
@@ -87,7 +87,7 @@ function Corps() {
 
         const fetchMakeup = async () => {
             const result = await axios(
-                'http://localhost:8080/api/menu/makeup'
+                'https://light-sunlight-353509.ew.r.appspot.com/api/menu/makeup'
             )
             setMakeup(result.data)
         }

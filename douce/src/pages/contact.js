@@ -27,7 +27,7 @@ function Contact() {
                 </div>
                 <div className='contact-text'>
                 <h2>
-                    Appelez-moi au 06 06 06 06 00
+                    Appelez-moi au 06 69 01 78 67
                 </h2>
                 <p ><strong>du lundi au samedi de 09h00 à 19h00</strong> </p>
         
